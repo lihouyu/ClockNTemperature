@@ -97,6 +97,7 @@ void main(void) {
 			}
 			if (load_mask & BIT4) { // Clear alarm int flag
 				TnC_stop_alarm();
+				en_beep = 0;
 				load_mask &= ~BIT4;
 			}
 			if (load_mask & BIT5) { // Reset time
@@ -271,7 +272,6 @@ __interrupt void Port_2(void) {
 		}
 		if (func == 2 && click == 1) { // Function 2, short click
 			load_mask |= BIT4;
-			en_beep = 0;
 		}
 		if (func == 2 && click == 2) { // Function 2, long click
 			load_mask |= BIT5;
