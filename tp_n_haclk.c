@@ -159,6 +159,10 @@ void TnC_beep(unsigned char beep) {
 		TnP_FUNC_BTN_OUT |= TnP_BUZZ_PIN;
 }
 
+void TnC_stop_beep() {
+	TnP_FUNC_BTN_OUT |= TnP_BUZZ_PIN;
+}
+
 void TnC_convert_year(unsigned char * clock, unsigned char * digits) {
 	unsigned char year;
 

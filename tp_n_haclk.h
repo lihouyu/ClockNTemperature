@@ -33,6 +33,7 @@ void TnC_convert_temperature(unsigned char * tp_data, unsigned char * digits);
 void TnC_read_clock(unsigned char * clock);
 void TnC_convert_clock(unsigned char * clock, unsigned char * digits);
 void TnC_beep(unsigned char beep);
+void TnC_stop_beep();
 void TnC_convert_year(unsigned char * clock, unsigned char * digits);
 void TnC_convert_mon_dat(unsigned char * clock, unsigned char * digits);
 void TnC_display(unsigned char * digits, unsigned char dot_pos, unsigned char blink_dot, unsigned char leading_zero);

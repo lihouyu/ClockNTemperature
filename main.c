@@ -98,6 +98,7 @@ void main(void) {
 			if (load_mask & BIT4) { // Clear alarm int flag
 				TnC_stop_alarm();
 				en_beep = 0;
+				TnC_stop_beep();
 				load_mask &= ~BIT4;
 			}
 			if (load_mask & BIT5) { // Reset time
